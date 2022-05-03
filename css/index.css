@@ -1,0 +1,11 @@
+.players-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.player-card {
+    min-width: 150px;
+    min-height: 150px;
+    flex: 1;
+    display: flex;
+}
