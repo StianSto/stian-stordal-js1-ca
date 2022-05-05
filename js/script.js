@@ -1,8 +1,4 @@
 const playersContainer = document.querySelector(".players-container");
-import playerArr from "./tempApiArray";
-
-const tempArr = new  playerArr
-console.log(playerArr)
 
 const url = 'https://api-football-v1.p.rapidapi.com/v3/players?team=40&season=2021&page=2';
 const options = {
@@ -13,30 +9,33 @@ const options = {
 	}
 };
 
-console.log(playerArr)
-
 async function callApiFootballDatabase() {
     try {
         const response = await fetch(url, options);
         const results = await response.json();
-        players = results.response;
+        const players = results.response;
 
-        console.log(players)
+        console.log(players);
 
         playersContainer.innerHTML = "";
         players.forEach(element => {
             let player = element.player;
-            playersContainer.innerHTML += `<div class="player-card">
-                                            <img src="${player.photo}"> 
-                                            <h2>${player.name}</h2>
-                                            <p>${player.age}</p>
-                                        </div>`
+            playersContainer.innerHTML += `<a href="details.html?id=${player.id}" class="player-card">
+                                            <div class="player-card__img">
+                                                <img src="${player.photo}"> 
+                                            </div>
+                                            <div class="player-card__info">
+                                                <h2>${player.name}</h2>
+                                                <p>Age: ${player.age}</p>
+                                                <p>Nationality: ${player.nationality}</p>
+                                            </div>
+                                        </a>`
         });
         
     }
     catch(error) {
-        console.log(error)
+        console.log(error);
+        playersContainer.innerHTML = error;
     }
 }
-// callApiFootballDatabase();  
-//turned off for rapidapi subscription
+callApiFootballDatabase();  

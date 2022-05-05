@@ -1,0 +1,38 @@
+.player__container {
+    padding-block: 3rem;
+}
+
+.player-profile {
+    width: 50%;
+    min-width: 400px;
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(3, 3, 3, 0.5);
+    margin-inline: auto;
+}
+
+.player-profile__img {
+    flex: 1;
+    max-width: 250px;
+}
+
+.player-profile__img img {
+    width: 100%;
+}
+
+.player-profile__info {
+    flex: 1;
+    width: fit-content;
+}
+
+h1 {
+    margin-block: 2rem;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}

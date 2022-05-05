@@ -1,11 +1,20 @@
 .players-container {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
 }
 
 .player-card {
-    min-width: 150px;
-    min-height: 150px;
-    flex: 1;
     display: flex;
+    max-width: 450px;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(3, 3, 3, 0.1);
+    gap: 1rem
+    ;
+}
+
+main {
+    padding: 3rem;
 }

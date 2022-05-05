@@ -2,3 +2,31 @@
     margin: 0;
     padding: 0;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(rgba(203,28,28,1) 0%, rgba(255,50,0,1) 50%, rgba(203,28,28,1) 100%);
+}
+
+nav {
+    background-color: gold;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-inline: 0.5rem;
+    align-self: center;
+}
+
+.site-title {
+    font-size: 3rem;
+    flex: 1;
+}

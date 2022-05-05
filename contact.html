@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1 - CA | Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="site-title">Liverpool catalogue</a>
+            <ul>
+                <a href="contact.html"><li>contact us</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <div class="validation-status"></div>
+            <div class="form-container">
+                <div class="input input--name">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <p class="error error--name">Please enter a name</p>
+                </div>
+                <div class="input input--address">
+                    <label for="address">Address (min. 25 characters)</label>
+                    <input type="text" name="address" id="address">
+                    <p class="error error--address">Address must be min. 25 characters</p>
+                </div>
+                <div class="input input--email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <p class="error error--email">Please enter a valid email. e.g: "john@mail.com"</p>
+                </div>
+                <div class="input input--query">
+                    <label for="query">Write your question here (min. 10 characters)</label>
+                    <textarea name="query" id="query" cols="30" rows="10"></textarea>
+                    <p class="error error--query">Please enter a minimum of 10 characters</p>
+                </div>
+                <button class="btn btn--submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

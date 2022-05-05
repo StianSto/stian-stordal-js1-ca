@@ -1,0 +1,47 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 5rem;
+    margin-block: 4rem;
+    background-color: rgb(253, 247, 247);
+}
+
+
+form .input {
+    display: flex;
+    flex-flow: column;
+    width: 30vw;
+    min-width: 300px;
+    max-width: 700px;
+    font-size: 1.5rem;
+}
+
+form input {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+}
+
+form textarea {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+}
+
+.error {
+    font-size: 1rem;
+    color: rgb(205, 0, 0);
+    display: none;
+}
+
+.validation-status {
+    display: none;
+    padding: 1rem;
+    font-size: 2.5rem;
+    width: fit;
+    color: green;
+    background-color: white;
+    border: 2px solid rgb(193, 193, 193);
+    border-radius: 5px;
+}
