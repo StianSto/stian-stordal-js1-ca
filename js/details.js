@@ -25,7 +25,8 @@ async function callApiPlayer() {
         playerProfile();
     }
     catch(error){
-        console.log(error)
+        console.log(error);
+        playerContainer.innerHTML = `<h2>an error ocurred while calling API<h2>`
     }
 }
 callApiPlayer();

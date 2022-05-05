@@ -30,3 +30,22 @@ nav li{
     font-size: 3rem;
     flex: 1;
 }
+
+.loading {
+    width: 100px;
+    height: 100px;
+    border: 20px solid white;
+    border-top: 20px solid black;
+    border-radius: 50%;
+    animation: loadingIcon 1.5s linear infinite;
+    transform: rotateZ(0deg);
+}
+
+@keyframes loadingIcon {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
