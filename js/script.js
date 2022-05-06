@@ -1,6 +1,6 @@
 const playersContainer = document.querySelector(".players-container");
 
-const url = 'https://api-football-v1.p.rapidapi.com/v3/players?team=40&season=2021&page=2';
+const url = 'https://api-football-v1.p.rapidapi.com/v3/players?team=40&season=2021';
 const options = {
 	method: 'GET',
 	headers: {
@@ -35,7 +35,7 @@ async function callApiFootballDatabase() {
     }
     catch(error) {
         console.log(error);
-        playersContainer.innerHTML = error;
+        playersContainer.innerHTML = `<h2 class="error--fetch">an error ocurred while calling API.<h2>`;
     }
 }
 callApiFootballDatabase();  

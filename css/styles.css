@@ -15,7 +15,7 @@ body {
 nav {
     background-color: gold;
     display: flex;
-    padding: 0.5rem;
+    padding: 1rem;
     align-items: center;
 }
 
@@ -29,6 +29,14 @@ nav li{
 .site-title {
     font-size: 3rem;
     flex: 1;
+}
+
+.error--fetch {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 3px solid black;
+    color: black;
 }
 
 .loading {

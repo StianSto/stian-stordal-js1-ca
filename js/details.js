@@ -26,7 +26,7 @@ async function callApiPlayer() {
     }
     catch(error){
         console.log(error);
-        playerContainer.innerHTML = `<h2>an error ocurred while calling API<h2>`
+        playerContainer.innerHTML = `<h2 class="error--fetch">an error ocurred while calling API.<h2>`
     }
 }
 callApiPlayer();
